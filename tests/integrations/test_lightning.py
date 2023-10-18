@@ -258,7 +258,6 @@ def test_metric_lightning_log(tmpdir):
         max_epochs=2,
         log_every_n_steps=1,
         logger=logger,
-        accelerator="gpu",
     )
     with no_warning_call(
         UserWarning,
